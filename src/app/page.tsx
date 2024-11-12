@@ -1,101 +1,131 @@
+"use client";
 import Image from "next/image";
-
+import "../style/home-style.css";
+import Link from "next/link";
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import Fotter from "./component/home/fotter";
+import SchoolMap from "./component/home/school-map"
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="bg-white ">
+      <nav className=" bg-gray-900 py-2 w-full p-5">
+        <div className=" flex justify-between md:justify-around items-center">
+          <Link className="" href="/">
+            <Image src="/assets/logo.png" alt="Logo" width={50} height={50} />
+            <h1>Sardar Patel Convent School</h1>
+          </Link>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          <span className="">
+            <div className="flex justify-center gap-[10px] md:gap-5">
+              <Link href="#">
+                <FaFacebook className="text-[25px] md:text-[32px] " />
+              </Link>
+              <Link href="#">
+                {" "}
+                <FaInstagram
+                  className="text-[25px] md:text-[32px] "
+                  color="#e4405f"
+                />
+              </Link>
+              <Link href="#">
+                {" "}
+                <FaLinkedin
+                  className="text-[25px] md:text-[32px] "
+                  color="#0077b5"
+                />
+              </Link>
+              <Link href="#">
+                {" "}
+                <FaTwitter
+                  className="text-[25px] md:text-[32px] "
+                  color="#00acee"
+                />
+              </Link>
+            </div>
+          </span>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </nav>
+
+      <div className="mt-0 background">
+        <div className="row color_banner ">
+          <div className="col" id="banner_content">
+            <div className="">
+              <h3 className="text-white">We are the</h3>
+              <h2 className="text-white">Game Changers</h2>
+              <p>A space where we make it happen.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className=" mt-4 p-10">
+        <div className="row ">
+          <h1 id="heading">News & Events</h1>
+
+          <div className="md:flex  md:items-center text-start gap-20 ">
+            <Image
+              src="/assets/news.png"
+              alt="News"
+              className="mt-4 img-fluid img-thumbnail img-responsive flex-1"
+              width={500}
+              height={300}
+            />
+            <div className="col-md-6 flex-1 space-y-10 ">
+              <div>
+                <p className="mt-4" id="paragraph">
+                  Hon Julie Bishop, Foreign Minister of Australia, visits Shiv
+                  Nadar School.
+                </p>
+                <p className="text-black">
+                  Posted on July 20, 2017 by Shiv Nadar School
+                </p>
+              </div>
+              <p className="small_paragraph ">
+                Hon Julie Bishop, Minister for Foreign Affairs, Government of
+                Australia visited Shiv Nadar School, Gurgaon, yesterday, along
+                with Her Excellency Harinder Sindhu, Australian Ambassador to
+                India. It was a day of invigorating exchange of thoughts and
+                ideas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-4 p-10" style={{ backgroundColor: "#F2F4F5" }}>
+        <div className="row">
+          <h1 id="heading">Our Shining Star</h1>
+
+          <div className="flex flex-col justify-center items-center">
+            <div className=" flex-1">
+              <Image
+                src="/assets/star.png"
+                id="zoom"
+                alt="Star"
+                width={400}
+                height={300}
+              />
+            </div>
+            <div className="flex-1">
+              <p className="">
+                <span className="text-black text-[20px] ">
+                  Dancing has always been my passion, and my school has helped
+                  me at every step to pursue it.
+                </span>
+              </p>
+              <p className="text-black text-right mt-4">
+                — Ria Bajaj, Student of class 9
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>{ <SchoolMap />}</div>
+
+      <div>
+        <Fotter />
+      </div>
     </div>
   );
 }
