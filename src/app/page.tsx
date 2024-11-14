@@ -1,44 +1,74 @@
 "use client";
+import { useRef, useState } from "react";
 import Image from "next/image";
 import "../style/home-style.css";
 import Link from "next/link";
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import About from "./component/about"
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
 import Fotter from "./component/home/fotter";
-import SchoolMap from "./component/home/school-map"
+import SchoolMap from "./component/home/school-map";
 export default function Home() {
+  const homeRef = useRef<HTMLDivElement>(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  // Array of background image classes
+  const imageClasses = ["image1", "image2", "image3", "image4"];
+
+  const switchImage = () => {
+    if (homeRef.current) {
+      // Remove the current image class
+      homeRef.current.classList.remove(imageClasses[currentImageIndex]);
+
+      // Calculate the next image index
+      const nextIndex = (currentImageIndex + 1) % imageClasses.length;
+      setCurrentImageIndex(nextIndex);
+
+      // Add the new image class
+      homeRef.current.classList.add(imageClasses[nextIndex]);
+    }
+  };
   return (
     <div className="bg-white ">
-      <nav className=" bg-gray-900 py-2 w-full p-5">
+      <nav className=" bg-gray-900 py-2 w-full p-5 " id="home">
         <div className=" flex justify-between md:justify-around items-center">
           <Link className="" href="/">
-            <Image src="/assets/logo.png" alt="Logo" width={50} height={50} />
-            <h1>Sardar Patel Convent School</h1>
+            <Image
+              src="/assets/logo.jpg"
+              alt="Logo"
+              width={60}
+              height={60}
+              className="rounded-full"
+            />
+            <h1>SARDAR PATEL HR SEC SCHOOL</h1>
           </Link>
 
           <span className="">
             <div className="flex justify-center gap-[10px] md:gap-5">
-              <Link href="#">
-                <FaFacebook className="text-[25px] md:text-[32px] " />
+              <Link href="https://www.facebook.com/profile.php?id=100010652954238">
+                <FaFacebook
+                  className="text-[25px] md:text-[32px] "
+                  color="blue"
+                />
               </Link>
-              <Link href="#">
+              <Link href="https://www.instagram.com/sardar_patel_hr_sec_school/">
                 {" "}
                 <FaInstagram
                   className="text-[25px] md:text-[32px] "
-                  color="#e4405f"
+                  color="red"
                 />
               </Link>
-              <Link href="#">
+
+              <Link href="https://www.youtube.com/@sardarpatelhr.sec.school9963">
                 {" "}
-                <FaLinkedin
+                <FaYoutube
                   className="text-[25px] md:text-[32px] "
-                  color="#0077b5"
-                />
-              </Link>
-              <Link href="#">
-                {" "}
-                <FaTwitter
-                  className="text-[25px] md:text-[32px] "
-                  color="#00acee"
+                  color="red"
                 />
               </Link>
             </div>
@@ -46,7 +76,11 @@ export default function Home() {
         </div>
       </nav>
 
-      <div className="mt-0 background">
+      <div
+        className={`mt-0 background ${imageClasses[currentImageIndex]}`}
+        ref={homeRef}
+        onClick={switchImage}
+      >
         <div className="row color_banner ">
           <div className="col" id="banner_content">
             <div className="">
@@ -58,7 +92,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className=" mt-4 p-10">
+      {/* <div className=" mt-4 p-10" id="news&events">
         <div className="row ">
           <h1 id="heading">News & Events</h1>
 
@@ -90,38 +124,45 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="mt-4 p-10" style={{ backgroundColor: "#F2F4F5" }}>
         <div className="row">
           <h1 id="heading">Our Shining Star</h1>
 
           <div className="flex flex-col justify-center items-center">
-            <div className=" flex-1">
+            <div className=" flex-1 ">
               <Image
-                src="/assets/star.png"
+                src="/assets/shining.jpeg"
                 id="zoom"
                 alt="Star"
-                width={400}
-                height={300}
+                width={500}
+                height={400}
+                className="rounded-lg "
               />
             </div>
             <div className="flex-1">
               <p className="">
                 <span className="text-black text-[20px] ">
-                  Dancing has always been my passion, and my school has helped
-                  me at every step to pursue it.
+                Gaming has always been our passion, and our school has supported me at every step to pursue it.
                 </span>
               </p>
               <p className="text-black text-right mt-4">
-                — Ria Bajaj, Student of class 9
+                — Student of class 9
               </p>
             </div>
           </div>
         </div>
       </div>
 
-      <div>{ <SchoolMap />}</div>
+      <div className=" p-10 bg-gray-50" id="about" >
+        <div className="row">
+          <h1 id="heading">About School</h1>
+        </div>
+        <About />
+      </div>
+
+      <div>{<SchoolMap />}</div>
 
       <div>
         <Fotter />

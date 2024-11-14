@@ -6,12 +6,29 @@
 }
 
 .background {
-  background-image: url(/assets/banner.png);
+  background-image: url(/assets/banner2.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   
   background-position: center;
 }
+.background.active {
+  background-image: url(/assets/banner.png);
+}
+
+.background.image1 {
+  background-image: url(/assets/banner3.jpeg);
+}
+
+.background.image2 {
+  background-image: url(/assets/banner4.jpeg);
+}
+
+.background.image3 {
+  background-image: url(/assets/banner5.jpeg);
+}
+
+
 .color_banner {
   background-color: #546a3e88;
   color: #ffffff;

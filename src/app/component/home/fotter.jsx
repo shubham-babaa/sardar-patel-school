@@ -1,5 +1,6 @@
+"use client";
 import React from "react";
-
+import Link from "next/link";
 export default function Fotter() {
   return (
     <section>
@@ -15,15 +16,21 @@ export default function Fotter() {
         <div className="row  justify-content-center md:w-[50%] mx-auto">
           <div className="col-xl-3 p-5 d-flex justify-content-center">
             <div className="">
-              <h3 id="footer_h"> Sardar Patel Convent School</h3>
-              <p id="footer_p">Home</p>
-              <p id="footer_p">About School</p>
-              <p id="footer_p">Learning</p>
-              <p id="footer_p">Prpole</p>
-              <p id="footer_p">Register for Admission</p>
-              <p id="footer_p">Our School</p>
-              <p id="footer_p">Careers</p>
-              <p id="footer_p">Countact Us</p>
+              <h3 id="footer_h"> Sardar Patel School</h3>
+              <Link href="#home">
+                <p id="footer_p">Home</p>
+              </Link>
+              <Link href="#home">
+                <p id="footer_p">Shining Star</p>
+              </Link>
+              <Link href="#about">
+                <p id="footer_p">About School</p>
+              </Link>
+
+              {/* <p id="footer_p">Register for Admission</p>
+              <p id="footer_p">Our School</p> */}
+              {/* <p id="footer_p">Careers</p> */}
+              <p id="footer_p">Countact Number : +91 9907327147</p>
             </div>
           </div>
         </div>
@@ -32,14 +39,14 @@ export default function Fotter() {
           Sardar Patel Convent School- Head Office&nbsp;{" "}
           <span style={{ fontSize: "15px" }}>
             In front of Govt Primary School Behind New Galla Mandi Adarsh Nagar,
-            Contact Number: 0120- 4928550
+            Contact Number:+91 9907378338
           </span>
         </p>
       </div>
       <div className="container mt-3">
         <div className="row">
-          <div className="col-xl-4 d-flex justify-content-center text-center">
-            <p id="d_h">
+          <div className=" text-black d-flex justify-content-center text-center">
+            <p id="">
               &copy; Sardar Patel Convent School In front of Govt Primary School
               Behind New Galla Mandi Adarsh Nagar
             </p>
