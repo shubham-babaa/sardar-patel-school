@@ -18,7 +18,7 @@ export default function About() {
             className="w-40 h-40 mb-4 rounded-full"
           />
           <h2 className="text-2xl font-semibold text-blue-700 mb-4">
-            SARDAR PATEL HR SEC SCHOOL
+            SARDAR PATEL H.R SEC. SCHOOL
           </h2>
           <p className="text-gray-600 mb-2">
             Established in 1997, upgraded to a high school in 2012, and further
