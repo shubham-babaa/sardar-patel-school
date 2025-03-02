@@ -183,7 +183,7 @@ export default function Home() {
             >
               <div className="relative h-48">
                 <Image
-                  src={`/n1.webp `}
+                  src={`/n1.webp`}
                   alt={`News ${item}`}
                   fill
                   className="object-cover"
