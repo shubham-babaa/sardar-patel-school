@@ -57,11 +57,11 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" />
         <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE" />
+        <meta name="google-site-verification" content="Z1YNlh4SfNUdXKyj8lpHdTFu9Z_WYcGrBPaoM0SCgu0" />
         <meta name="theme-color" content="#ffffff" />
         <link rel="canonical" href="https://sardarpatelschoolsatna.in/" />
         {/* Add the URL of your dynamic sitemap here */}
-        <link rel="sitemap" type="application/xml" href="https://sardarpatelschoolsatna.in/api/sitemap.xml" />
+        <link rel="sitemap" type="application/xml" href="https://sardarpatelschoolsatna.in/sitemap.xml" />
 
         {/* Structured Data (JSON-LD) */}
         <script
