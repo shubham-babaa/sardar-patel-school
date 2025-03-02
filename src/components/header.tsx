@@ -65,7 +65,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 flex justify-center">
+    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 lg:flex lg:justify-center">
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center gap-2">
@@ -138,9 +138,9 @@ export default function Header() {
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? (
-            <X className="h-6 w-6" />
+            <X className="h-10 w-10" />
           ) : (
-            <Menu className="h-6 w-6" />
+            <Menu className="h-10 w-10" />
           )}
           <span className="sr-only">Toggle menu</span>
         </Button>
@@ -148,7 +148,7 @@ export default function Header() {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="lg:hidden border-t">
+        <div className="lg:hidden border-t px-10 sm:px-0">
           <div className="container py-4">
             <nav className="flex flex-col gap-4">
               {menuItems.map((item) => (
@@ -193,8 +193,8 @@ export default function Header() {
                 </div>
               ))}
             </nav>
-            {/* <div className="mt-6 flex flex-col gap-4"> */}
-              {/* <Button asChild variant="outline" className="w-full">
+            {/* <div className="mt-6 flex flex-col gap-4">
+              <Button asChild variant="outline" className="w-full">
                 <Link href="/portal" onClick={() => setIsMenuOpen(false)}>
                   Student/Parent Portal
                 </Link>
@@ -206,8 +206,8 @@ export default function Header() {
                 >
                   Apply Now
                 </Link>
-              </Button> */}
-            {/* </div> */}
+              </Button>
+            </div> */}
           </div>
         </div>
       )}

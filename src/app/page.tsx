@@ -187,6 +187,7 @@ export default function Home() {
                   alt={`News ${item}`}
                   fill
                   className="object-cover"
+                  priority
                 />
               </div>
               <div className="p-6">
