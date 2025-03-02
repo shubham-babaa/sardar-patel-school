@@ -60,10 +60,8 @@ export default function RootLayout({
         <meta name="google-site-verification" content="Z1YNlh4SfNUdXKyj8lpHdTFu9Z_WYcGrBPaoM0SCgu0" />
         <meta name="theme-color" content="#ffffff" />
         <link rel="canonical" href="https://sardarpatelschoolsatna.in/" />
-        {/* Add the URL of your dynamic sitemap here */}
         <link rel="sitemap" type="application/xml" href="https://sardarpatelschoolsatna.in/sitemap.xml" />
 
-        {/* Structured Data (JSON-LD) */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
