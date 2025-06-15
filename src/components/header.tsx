@@ -33,12 +33,12 @@ export default function Header() {
     {
       name: "Academics",
       href: "/academics",
-    //   dropdown: [
-    //     { name: "Elementary School", href: "/academics/elementary" },
-    //     { name: "Middle School", href: "/academics/middle" },
-    //     { name: "High School", href: "/academics/high" },
-    //     { name: "Curriculum", href: "/academics/curriculum" },
-    //   ],
+      // dropdown: [
+      //   { name: "Elementary School", href: "/academics/elementary" },
+      //   { name: "Middle School", href: "/academics/middle" },
+      //   { name: "High School", href: "/academics/high" },
+      //   { name: "Curriculum", href: "/academics/curriculum" },
+      // ],
     },
     {
       name: "Admissions",
@@ -62,6 +62,7 @@ export default function Header() {
     // },
     { name: "News & Events", href: "/news" },
     { name: "Contact", href: "/contact" },
+    // { name: "Student Portal", href: "/portal" },
   ];
 
   return (
@@ -73,9 +74,10 @@ export default function Header() {
               <AvatarImage src="/logo.jpg" alt="User Profile" className="rounded-full "/>
             </Avatar>
             <span className="font-bold text-xl hidden sm:inline-block">
-              Sardar Patel Hr. Sec. School
+              SARDAR PATEL HR. SEC. SCHOOL
             </span>
-            <span className="font-bold text-xl sm:hidden">Sardar patel</span>
+            <span className="font-bold text-md sm:hidden flex flex-col  items-end">SARDAR PATEL  
+              <span className=" text-[12px]"> HR. SEC. SCHOOL</span></span>
           </Link>
         </div>
 

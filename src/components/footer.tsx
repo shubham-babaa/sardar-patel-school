@@ -6,7 +6,8 @@ import { Avatar, AvatarImage } from "@radix-ui/react-avatar"
 
 export default function Footer() {
   return (
-    <footer className="bg-muted flex justify-center">
+    <footer className=" flex justify-center">
+      
       <div className="container px-4 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
@@ -80,7 +81,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex">
                 <MapPin className="h-5 w-5 text-primary mr-3 shrink-0" />
-                <span className="text-muted-foreground">SARDAR PATEL HR SEC SCHOOL
+                <span className="text-muted-foreground">
                 WARD NO.13, Hanuman Nagar, Adarsh Nagar Nai Basti, Satna, Madhya Pradesh 485005</span>
               </li>
               <li className="flex">
@@ -89,7 +90,7 @@ export default function Footer() {
               </li>
               <li className="flex">
                 <Mail className="h-5 w-5 text-primary mr-3 shrink-0" />
-                <span className="text-muted-foreground">info@sardarpatelschool.edu</span>
+                <span className="text-muted-foreground">Sphsschool@rediffmail.com</span>
               </li>
             </ul>
           </div>

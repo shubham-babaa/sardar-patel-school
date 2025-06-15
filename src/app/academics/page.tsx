@@ -41,28 +41,28 @@ export default function AcademicsPage() {
               them discover their unique potential and develop the skills needed for future success.
             </p>
             <div className="grid grid-cols-2 gap-4">
-              <div className="flex items-start">
+              <div className="flex items-start  p-4 rounded-xl shadow-xl">
                 <Users className="h-5 w-5 text-primary mr-3 mt-0.5" />
                 <div>
                   <p className="font-medium">Student-Teacher Ratio</p>
                   <p className="text-muted-foreground">12:1</p>
                 </div>
               </div>
-              <div className="flex items-start">
+              <div className="flex items-start  p-4 rounded-xl shadow-xl">
                 <Award className="h-5 w-5 text-primary mr-3 mt-0.5" />
                 <div>
                   <p className="font-medium">Advanced Placement</p>
                   <p className="text-muted-foreground">15+ AP Courses</p>
                 </div>
               </div>
-              <div className="flex items-start">
+              <div className="flex items-start  p-4 rounded-xl shadow-xl">
                 <BookOpen className="h-5 w-5 text-primary mr-3 mt-0.5" />
                 <div>
                   <p className="font-medium">College Acceptance</p>
                   <p className="text-muted-foreground">98% Rate</p>
                 </div>
               </div>
-              <div className="flex items-start">
+              <div className="flex items-start  p-4 rounded-xl shadow-xl">
                 <Clock className="h-5 w-5 text-primary mr-3 mt-0.5" />
                 <div>
                   <p className="font-medium">Class Duration</p>
@@ -88,10 +88,10 @@ export default function AcademicsPage() {
           <h2 className="text-3xl font-bold text-center mb-12">Our Academic Programs</h2>
 
           <Tabs defaultValue="elementary" className="w-full">
-            <TabsList className="grid w-full grid-cols-1 md:grid-cols-3">
-              <TabsTrigger value="elementary">Elementary School (K-5)</TabsTrigger>
-              <TabsTrigger value="middle">Middle School (6-8)</TabsTrigger>
-              <TabsTrigger value="high">High School (9-12)</TabsTrigger>
+            <TabsList className="grid w-full grid-cols-3">
+              <TabsTrigger value="elementary">Primary school</TabsTrigger>
+              <TabsTrigger value="middle">Middle School</TabsTrigger>
+              <TabsTrigger value="high">High School</TabsTrigger>
             </TabsList>
 
             <TabsContent value="elementary" className="mt-8">
@@ -105,9 +105,9 @@ export default function AcademicsPage() {
                   />
                 </div>
                 <div className="order-1 lg:order-2">
-                  <h3 className="text-2xl font-bold mb-4">Elementary School (K-5)</h3>
+                  <h3 className="text-2xl font-bold mb-4">Primary School (K-5)</h3>
                   <p className="text-muted-foreground mb-6">
-                    Our elementary program provides a strong foundation in core academic subjects while nurturing
+                    Our Primary program provides a strong foundation in core academic subjects while nurturing
                     curiosity, creativity, and a love of learning. Through hands-on activities, project-based learning,
                     and individualized instruction, we help young students develop essential skills and knowledge.
                   </p>

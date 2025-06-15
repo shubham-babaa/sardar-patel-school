@@ -40,10 +40,11 @@ export default function AdmissionsPage() {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">Admission Process</h2>
           <p className="text-muted-foreground max-w-3xl mx-auto">
-            We're delighted that you're considering <strong>Sardar Patel Hr. Sec School</strong> for your
-            child's education. Our admissions process is designed to be thorough
-            yet supportive, helping us get to know your child while introducing
-            you to our community.
+            We're delighted that you're considering{" "}
+            <strong>Sardar Patel Hr. Sec School</strong> for your child's
+            education. Our admissions process is designed to be thorough yet
+            supportive, helping us get to know your child while introducing you
+            to our community.
           </p>
         </div>
 
@@ -103,12 +104,16 @@ export default function AdmissionsPage() {
       <section className="py-16 bg-muted">
         <div className="container mx-auto px-4">
           <Tabs defaultValue="requirements" className="w-full">
-            <TabsList className="grid w-full grid-cols-1 md:grid-cols-3">
-              <TabsTrigger value="requirements">
-                Admission Requirements
+            <TabsList className=" grid grid-cols-3 w-full gap-2">
+              <TabsTrigger value="requirements" className="w-full text-center">
+                Requirements
               </TabsTrigger>
-              <TabsTrigger value="tuition">Tuition & Financial Aid</TabsTrigger>
-              <TabsTrigger value="faq">Frequently Asked Questions</TabsTrigger>
+              <TabsTrigger value="tuition" className="w-full text-center">
+                 Aid
+              </TabsTrigger>
+              <TabsTrigger value="faq" className="w-full text-center">
+                FAQ
+              </TabsTrigger>
             </TabsList>
 
             <TabsContent value="requirements" className="mt-8">
@@ -118,11 +123,12 @@ export default function AdmissionsPage() {
                     Admission Requirements
                   </h3>
                   <p className="text-muted-foreground mb-6">
-                    <strong>Sardar Patel Hr. Sec School</strong> seeks students who demonstrate academic
-                    potential, intellectual curiosity, and good character. Our
-                    admissions committee reviews each application holistically,
-                    considering academic records, teacher recommendations,
-                    assessment results, and personal interviews.
+                    <strong>Sardar Patel Hr. Sec School</strong> seeks students
+                    who demonstrate academic potential, intellectual curiosity,
+                    and good character. Our admissions committee reviews each
+                    application holistically, considering academic records,
+                    teacher recommendations, assessment results, and personal
+                    interviews.
                   </p>
 
                   <div className="space-y-4">
@@ -199,11 +205,11 @@ export default function AdmissionsPage() {
                     Tuition & Financial Aid
                   </h3>
                   <p className="text-muted-foreground mb-6">
-                    <strong>Sardar Patel Hr. Sec School</strong> is committed to making our educational
-                    experience accessible to qualified students from diverse
-                    backgrounds. We offer a robust financial aid program to help
-                    bridge the gap between the cost of education and what
-                    families can afford.
+                    <strong>Sardar Patel Hr. Sec School</strong> is committed to
+                    making our educational experience accessible to qualified
+                    students from diverse backgrounds. We offer a robust
+                    financial aid program to help bridge the gap between the
+                    cost of education and what families can afford.
                   </p>
 
                   <div className="space-y-6">
@@ -234,9 +240,10 @@ export default function AdmissionsPage() {
                     <div>
                       <h4 className="text-xl font-bold mb-3">Financial Aid</h4>
                       <p className="text-muted-foreground mb-3">
-                        <strong>Sardar Patel Hr. Sec School</strong> awards over $3 million in need-based
-                        financial aid annually. Aid decisions are made
-                        independently from admission decisions.
+                        <strong>Sardar Patel Hr. Sec School</strong> awards over
+                        $3 million in need-based financial aid annually. Aid
+                        decisions are made independently from admission
+                        decisions.
                       </p>
                       <div className="flex items-start mb-3">
                         <DollarSign className="h-5 w-5 text-primary mr-2 mt-0.5" />
@@ -426,7 +433,8 @@ export default function AdmissionsPage() {
             <p className="text-muted-foreground mb-6">
               Our admissions team is here to answer your questions and guide you
               through the application process. We look forward to getting to
-              know your family and helping you explore all that <strong>Sardar Patel Hr. Sec School</strong> has to offer.
+              know your family and helping you explore all that{" "}
+              <strong>Sardar Patel Hr. Sec School</strong> has to offer.
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start">

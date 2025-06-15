@@ -37,7 +37,12 @@ export default function Home() {
               size="lg"
               className="bg-primary hover:bg-primary/90"
             >
-              <Link href="/admissions">Apply Now</Link>
+              <Link
+                href="/enroll-now
+              "
+              >
+                Apply Now
+              </Link>
             </Button>
             <Button
               asChild
@@ -114,10 +119,10 @@ export default function Home() {
               <strong>Sardar Patel Hr. Sec. School</strong>
             </h2>
             <p className="text-muted-foreground mb-4">
-              Founded in 1997, Sardar Patel Hr. Sec. School has been dedicated to
-              providing quality education for over two decades. Our mission is
-              to foster intellectual growth, creativity, and strong character in
-              a supportive yet challenging environment.
+              Founded in 1997, Sardar Patel Hr. Sec. School has been dedicated
+              to providing quality education for over two decades. Our mission
+              is to foster intellectual growth, creativity, and strong character
+              in a supportive yet challenging environment.
             </p>
             <p className="text-muted-foreground mb-6">
               With a student-teacher ratio of 15:1, we ensure personalized

@@ -31,7 +31,7 @@ export default function NewsEventsPage() {
       {/* News and Events Tabs */}
       <section className="py-16 container mx-auto px-4">
         <Tabs defaultValue="news" className="w-full">
-          <TabsList className="grid w-full grid-cols-1 md:grid-cols-2 mb-8">
+          <TabsList className="grid w-full grid-cols-2  mb-8">
             <TabsTrigger value="news">Latest News</TabsTrigger>
             <TabsTrigger value="events">Upcoming Events</TabsTrigger>
           </TabsList>

@@ -29,7 +29,7 @@ export default function AboutPage() {
       {/* Tabs Section */}
       <section className="py-16 container mx-auto px-4">
         <Tabs defaultValue="mission" className="w-full">
-          <TabsList className="grid w-full grid-cols-1 md:grid-cols-2">
+          <TabsList className="grid w-full grid-cols-2 ">
             <TabsTrigger value="mission">Mission & Values</TabsTrigger>
             <TabsTrigger value="history">Our History</TabsTrigger>
             {/* <TabsTrigger value="leadership">Leadership</TabsTrigger>

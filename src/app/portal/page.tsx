@@ -10,18 +10,18 @@ export default function PortalPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative w-full h-[300px] overflow-hidden">
+      <section className="relative w-full h-[700px] overflow-hidden">
         <Image
-          src="/placeholder.svg?height=300&width=1920&text=Student/Parent Portal"
+          src="/portal.webp?height=300&width=1920&text=Student/Parent Portal"
           alt="sardar patel Student/Parent Portal"
           width={1920}
-          height={300}
+          height={700}
           className="object-cover w-full h-full"
           priority
         />
         <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white p-4">
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">Student/Parent Portal</h1>
-          <p className="text-xl text-center max-w-2xl">
+          <p className="text-xl text-center max-w-2xl ">
             Access important information and resources for <strong>Sardar Patel Hr. Sec School</strong> students and parents
           </p>
         </div>
